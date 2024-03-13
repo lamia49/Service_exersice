@@ -56,7 +56,7 @@ public class NewsArticilContoller {
         boolean isPolishe= newsArticiService.published(id);
         if(isPolishe){
             return ResponseEntity.status(200).body("artical polished");
-        }return ResponseEntity.status(400).body("already polished");
+        }return ResponseEntity.status(400).body("Not Found");
     }
 
 
